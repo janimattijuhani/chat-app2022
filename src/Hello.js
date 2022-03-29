@@ -5,6 +5,7 @@ class Hello extends React.Component {
         return (
             <div>
                 <p>Hello hello React! {this.props.name}</p>
+                <marquee><p>Toinen elementti on: {this.props.name2}</p></marquee>
             </div>
         );
       }
