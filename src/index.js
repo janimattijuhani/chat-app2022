@@ -40,7 +40,7 @@ class AppRouter extends React.Component {
             }
           </nav>
           <Switch>
-            <Route exact path="/" component={App} />
+            <Route exact path="/" render={() => <App user={this.state.user} />} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} /> 
           </Switch>
