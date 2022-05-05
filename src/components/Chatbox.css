@@ -4,3 +4,15 @@
         text-align: left;
         padding-left: 30%;
     }
+
+    body {
+        font-family: roboto;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    strong {
+        padding: 5px;
+    }

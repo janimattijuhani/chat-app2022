@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Hello from './Hello';
 import { render } from '@testing-library/react';
 import React from 'react';
 import Chatbox from './components/Chatbox';
@@ -37,7 +36,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Chat app</h1>
+        <h1>Jazz Chat</h1>
+        <img src="/images/logojazzchat.png" />
+
+
         {this.props.user &&
           <div className="allow-chat">
             <Chatbox />
@@ -55,7 +57,7 @@ class App extends React.Component {
         }
       {!this.props.user &&
         <div className="disallow-chat">
-        <p><Link to="/login">Login</Link> or<Link to="/register">Register</Link> to start chatting!</p>
+        <p><Link to="/login">LOGIN</Link>or<Link to="/register">REGISTER</Link>to start chatting!</p>
         </div>
       }
     </div>

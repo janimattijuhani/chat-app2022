@@ -2,6 +2,7 @@ import React from 'react';
 import firebase from '../firebase.js';
 import { Link } from 'react-router-dom';
 import Login from './Login';
+import Button from '@mui/material/Button';
 
 class Register extends React.Component {
     constructor(props){
@@ -53,7 +54,7 @@ class Register extends React.Component {
                         >      
                     </input>
                 <button className="submit">Get started</button>
-                <p>Already have an account? <Link className="Login-btn" to="/login">Login here</Link></p>    
+                <p>Already have an account?<Link className="Login-btn" to="/login">Login here</Link></p>    
                 </form>
             </div>
         );

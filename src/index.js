@@ -7,6 +7,8 @@ import Login from './components/Login';
 import Register from './components/Register';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import firebase, {auth, provider} from './firebase.js';
+import Button from '@mui/material/Button';
+
 
 class AppRouter extends React.Component {
     constructor(props) {
@@ -31,8 +33,11 @@ class AppRouter extends React.Component {
           <nav className="main-nav">
             {!this.state.user &&
               <div>
+           <Button variant="outlined">    
            <Link to="/login">Login</Link>
-           <Link to="/register">Register</Link>
+           </Button> 
+           <Button variant="outlined">
+           <Link to="/register">Register</Link></Button>
            </div>
             }
             {this.state.user &&

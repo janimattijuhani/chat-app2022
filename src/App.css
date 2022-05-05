@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+input {
+  background-color: #ffffff;
+  margin: 15px;
+  border: 2px;
+  padding: 10px 5px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
