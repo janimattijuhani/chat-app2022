@@ -33,10 +33,28 @@ class AppRouter extends React.Component {
           <nav className="main-nav">
             {!this.state.user &&
               <div>
-           <Button variant="outlined">    
+           <Button variant="outlined" 
+           sx={{
+          bgcolor: 'background.paper',
+          borderColor: 'black',
+          boxShadow: 2,
+          borderRadius: 1,
+          marginRight: 1,
+          ":hover": { bgcolor: '#cccccc',
+    }
+  }}>    
            <Link to="/login">Login</Link>
            </Button> 
-           <Button variant="outlined">
+           <Button variant="outlined" sx={{
+            bgcolor: 'background.paper',
+            borderColor: 'black',
+            boxShadow: 2,
+            borderRadius: 1,
+            marginLeft: 1,
+            ":hover": { bgcolor: '#FF8c8c',
+    },
+  }}
+>
            <Link to="/register">Register</Link></Button>
            </div>
             }
